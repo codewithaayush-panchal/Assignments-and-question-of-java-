@@ -172,34 +172,34 @@ public class First {
             //problem 9th: To find Armstrong Number between two given number.
 
 
-                    Scanner sc = new Scanner(System.in);
-
-                    // Input range
-                    System.out.print("Enter starting number: ");
-                    int start = sc.nextInt();
-
-                    System.out.print("Enter ending number: ");
-                    int end = sc.nextInt();
-
-                    System.out.println("Armstrong numbers between " + start + " and " + end + " are:");
-
-                    // Loop through range
-                    for (int num = start; num <= end; num++) {
-                        int original = num;
-                        int digits = String.valueOf(num).length(); // count of digits
-                        int sum = 0;
-
-                        int temp = num;
-                        while (temp > 0) {
-                            int digit = temp % 10;         // take last digit
-                            sum += Math.pow(digit, digits); // raise it to power of digits
-                            temp = temp / 10;              // remove last digit
-                        }
-
-                        if (sum == original) {
-                            System.out.println(num); // Armstrong found
-                        }
-                    }
+//                    Scanner sc = new Scanner(System.in);
+//
+//                    // Input range
+//                    System.out.print("Enter starting number: ");
+//                    int start = sc.nextInt();
+//
+//                    System.out.print("Enter ending number: ");
+//                    int end = sc.nextInt();
+//
+//                    System.out.println("Armstrong numbers between " + start + " and " + end + " are:");
+//
+//                    // Loop through range
+//                    for (int num = start; num <= end; num++) {
+//                        int original = num;
+//                        int digits = String.valueOf(num).length(); // count of digits
+//                        int sum = 0;
+//
+//                        int temp = num;
+//                        while (temp > 0) {
+//                            int digit = temp % 10;         // take last digit
+//                            sum += Math.pow(digit, digits); // raise it to power of digits
+//                            temp = temp / 10;              // remove last digit
+//                        }
+//
+//                        if (sum == original) {
+//                            System.out.println(num); // Armstrong found
+//                        }
+//                    }
 
                     //again solved by chatgpt and didn't understood
 
